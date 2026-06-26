@@ -1,49 +1,49 @@
-"use client";
+'use client';
 
-import { useEffect, useRef, ReactNode } from "react";
+import { useEffect, useRef, type ReactNode } from 'react';
 
 interface SectionWrapperProps {
   children: ReactNode;
   className?: string;
   id?: string;
+  delay?: number;
 }
 
 export default function SectionWrapper({
   children,
-  className = "",
+  className = '',
   id,
+  delay = 0,
 }: SectionWrapperProps) {
-  const sectionRef = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
+            setTimeout(() => {
+              el.classList.add('is-visible');
+            }, delay);
+            observer.unobserve(el);
           }
         });
       },
       { threshold: 0.1 }
     );
 
-    const current = sectionRef.current;
-    if (current) {
-      observer.observe(current);
-    }
-
-    return () => {
-      if (current) {
-        observer.unobserve(current);
-      }
-    };
-  }, []);
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [delay]);
 
   return (
     <div
-      ref={sectionRef}
-      className={`fade-in-section w-full ${className}`}
+      ref={ref}
       id={id}
+      className={`fade-in-section ${className}`}
     >
       {children}
     </div>

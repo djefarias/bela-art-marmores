@@ -1,182 +1,185 @@
-import Link from "next/link";
+'use client';
+
+import Link from 'next/link';
+import { FaWhatsapp, FaInstagram, FaMapMarkerAlt, FaClock, FaEnvelope, FaPhone, FaLongArrowAltRight } from 'react-icons/fa';
+
+const WHATSAPP_NUMBER = '5544999999999';
+const INSTAGRAM_URL = 'https://instagram.com/belaartmarmoraria';
+const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
+
+const FOOTER_LINKS = [
+  {
+    title: 'Navegação',
+    links: [
+      { label: 'Home', href: '/' },
+      { label: 'Serviços', href: '/servicos' },
+      { label: 'Projetos', href: '/projetos' },
+      { label: 'Sobre Nós', href: '/sobre' },
+      { label: 'Blog', href: '/blog' },
+    ],
+  },
+  {
+    title: 'Serviços',
+    links: [
+      { label: 'Bancadas de Granito', href: '/servicos#bancadas-granito' },
+      { label: 'Bancadas de Quartzo', href: '/servicos#bancadas-quartzo' },
+      { label: 'Pias e Lavatórios', href: '/servicos#pias-lavatorios' },
+      { label: 'Escadas', href: '/servicos#escadas' },
+      { label: 'Projetos Personalizados', href: '/servicos#projetos-personalizados' },
+    ],
+  },
+];
 
 export default function Footer() {
   return (
-    <footer className="bg-marble-900 border-t border-gold-900/20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-          {/* Logo e Descrição */}
+    <footer className="relative bg-preto border-t border-dourado/10">
+      {/* Gold top line */}
+      <div className="h-1 bg-gradient-to-r from-transparent via-dourado to-transparent opacity-40" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-16">
+          {/* Brand Column */}
           <div className="lg:col-span-1">
-            <Link href="/" className="inline-flex items-center gap-2 mb-4">
-              <span className="text-2xl font-serif font-bold text-gold-600 tracking-wide">
-                Bela Art
-              </span>
-              <span className="text-2xl font-serif font-light text-marble-300">
-                Mármores
-              </span>
+            <Link href="/" className="inline-flex items-center gap-3 group mb-6">
+              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-dourado to-dourado-claro flex items-center justify-center flex-shrink-0">
+                <span className="text-preto font-bold text-xl">B</span>
+              </div>
+              <div>
+                <span className="font-heading text-white text-xl font-bold tracking-wide block leading-tight group-hover:text-dourado transition-colors duration-300">
+                  Bela Art
+                </span>
+                <span className="text-[10px] text-dourado/70 tracking-[0.3em] uppercase font-medium">
+                  Marmoraria
+                </span>
+              </div>
             </Link>
-            <p className="text-marble-400 text-sm leading-relaxed">
-              Transformando pedras em obras de arte há mais de 15 anos.
-              Excelência em marmoraria em Paranavaí e região.
+
+            <p className="text-gray-400 text-sm leading-relaxed mb-6">
+              Transformando pedras em obras de arte há mais de 15 anos em Paranavaí e região. 
+              Excelência em mármores, granitos e quartzos para sua obra.
             </p>
+
+            {/* Social */}
+            <div className="flex items-center gap-3">
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-green-600/20 text-green-400 flex items-center justify-center hover:bg-green-600 hover:text-white transition-all duration-300"
+                aria-label="WhatsApp"
+              >
+                <FaWhatsapp size={18} />
+              </a>
+              <a
+                href={INSTAGRAM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-600/20 to-pink-600/20 text-pink-400 flex items-center justify-center hover:from-purple-600 hover:to-pink-600 hover:text-white transition-all duration-300"
+                aria-label="Instagram"
+              >
+                <FaInstagram size={18} />
+              </a>
+            </div>
           </div>
 
-          {/* Links Rápidos */}
-          <div>
-            <h3 className="text-gold-600 font-serif text-lg mb-4">
-              Navegação
-            </h3>
-            <ul className="space-y-2.5">
-              {[
-                { href: "/", label: "Home" },
-                { href: "/servicos", label: "Serviços" },
-                { href: "/projetos", label: "Projetos" },
-                { href: "/sobre", label: "Sobre" },
-                { href: "/contato", label: "Contato" },
-                { href: "/blog", label: "Blog" },
-              ].map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-marble-400 hover:text-gold-500 text-sm transition-colors duration-200"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+          {/* Link Columns */}
+          {FOOTER_LINKS.map((section) => (
+            <div key={section.title}>
+              <h4 className="font-heading text-white text-sm font-semibold uppercase tracking-wider mb-5">
+                {section.title}
+              </h4>
+              <ul className="space-y-3">
+                {section.links.map((link) => (
+                  <li key={link.label}>
+                    <Link
+                      href={link.href}
+                      className="text-gray-400 text-sm hover:text-dourado transition-colors duration-300 flex items-center gap-2 group/link"
+                    >
+                      <FaLongArrowAltRight
+                        size={10}
+                        className="text-dourado/0 group-hover/link:text-dourado transition-all duration-300"
+                      />
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
 
-          {/* Horários */}
+          {/* Contact Column */}
           <div>
-            <h3 className="text-gold-600 font-serif text-lg mb-4">
-              Horários
-            </h3>
-            <ul className="space-y-2.5 text-sm text-marble-400">
-              <li className="flex justify-between">
-                <span>Seg - Sex</span>
-                <span className="text-marble-300">07:30 - 18:00</span>
-              </li>
-              <li className="flex justify-between">
-                <span>Sábado</span>
-                <span className="text-marble-300">07:30 - 12:00</span>
-              </li>
-              <li className="flex justify-between">
-                <span>Domingo</span>
-                <span className="text-marble-500">Fechado</span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Contato */}
-          <div>
-            <h3 className="text-gold-600 font-serif text-lg mb-4">
+            <h4 className="font-heading text-white text-sm font-semibold uppercase tracking-wider mb-5">
               Contato
-            </h3>
-            <ul className="space-y-3 text-sm text-marble-400">
-              <li className="flex items-start gap-2">
-                <svg
-                  className="w-4 h-4 mt-0.5 text-gold-600 shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
-                </svg>
-                <span>
-                  Av. Dep. Heitor de Alencar Furtado, 1280
-                  <br />
-                  Jardim São Jorge - Paranavaí/PR
-                  <br />
-                  CEP 87711-000
+            </h4>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3">
+                <FaMapMarkerAlt className="text-dourado mt-0.5 flex-shrink-0" size={14} />
+                <span className="text-gray-400 text-sm">
+                  Rua Exemplo, 123 — Centro<br />
+                  Paranavaí, PR — 87700-000
                 </span>
               </li>
-              <li className="flex items-center gap-2">
-                <svg
-                  className="w-4 h-4 text-gold-600 shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                  />
-                </svg>
+              <li>
                 <a
-                  href="https://wa.me/5544998078099"
+                  href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-gold-500 transition-colors"
+                  className="flex items-center gap-3 text-gray-400 hover:text-green-400 transition-colors duration-300 text-sm"
                 >
-                  (44) 99807-8099
+                  <FaWhatsapp className="flex-shrink-0" size={14} />
+                  (44) 99999-9999
                 </a>
               </li>
-              <li className="flex items-center gap-2">
-                <svg
-                  className="w-4 h-4 text-gold-600 shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <rect
-                    width="20"
-                    height="20"
-                    x="2"
-                    y="2"
-                    rx="5"
-                    ry="5"
-                    strokeWidth={2}
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"
-                  />
-                  <line
-                    x1="17.5"
-                    x2="17.51"
-                    y1="6.5"
-                    y2="6.5"
-                    strokeWidth={2}
-                  />
-                </svg>
+              <li>
                 <a
-                  href="https://www.instagram.com/bela_art_marmoraria/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-gold-500 transition-colors"
+                  href="tel:44999999999"
+                  className="flex items-center gap-3 text-gray-400 hover:text-dourado transition-colors duration-300 text-sm"
                 >
-                  @bela_art_marmoraria
+                  <FaPhone className="flex-shrink-0" size={14} />
+                  (44) 99999-9999
                 </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:contato@belaartmarmoraria.com.br"
+                  className="flex items-center gap-3 text-gray-400 hover:text-dourado transition-colors duration-300 text-sm"
+                >
+                  <FaEnvelope className="flex-shrink-0" size={14} />
+                  contato@belaartmarmoraria.com.br
+                </a>
+              </li>
+              <li className="flex items-start gap-3">
+                <FaClock className="text-dourado mt-0.5 flex-shrink-0" size={14} />
+                <div className="text-gray-400 text-sm">
+                  <span className="block">Seg–Sex: 08:00–18:00</span>
+                  <span className="block">Sáb: 08:00–12:00</span>
+                </div>
               </li>
             </ul>
           </div>
         </div>
 
-        {/* Divider + Copyright */}
-        <div className="border-t border-gold-900/20 mt-10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-marble-500 text-xs text-center sm:text-left">
-            &copy; {new Date().getFullYear()} Bela Art Mármores. Todos os
-            direitos reservados.
+        {/* Bottom Bar */}
+        <div className="mt-14 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-gray-500 text-xs">
+            © {new Date().getFullYear()} Bela Art Marmoraria. Todos os direitos reservados.
           </p>
-          <p className="text-marble-500 text-xs">
-            Imagens ilustrativas.
-          </p>
+          <div className="flex items-center gap-4 text-gray-500 text-xs">
+            <button
+              onClick={() => {
+                const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Olá! Gostaria de um orçamento.')}`;
+                window.open(url, '_blank');
+              }}
+              className="hover:text-dourado transition-colors duration-300 cursor-pointer"
+            >
+              Solicitar Orçamento
+            </button>
+            <span className="text-gray-600">|</span>
+            <span>
+              Feito com dedicação em Paranavaí
+            </span>
+          </div>
         </div>
       </div>
     </footer>

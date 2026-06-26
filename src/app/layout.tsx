@@ -1,112 +1,118 @@
-import type { Metadata, Viewport } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import WhatsAppButton from "@/components/WhatsAppButton";
-import "./globals.css";
+import type { Metadata } from 'next';
+import { Inter, Poppins } from 'next/font/google';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import WhatsAppButton from '@/components/WhatsAppButton';
+import './globals.css';
 
 const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  display: "swap",
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
 });
 
-const playfairDisplay = Playfair_Display({
-  variable: "--font-playfair",
-  subsets: ["latin"],
-  display: "swap",
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '800'],
+  display: 'swap',
+  variable: '--font-poppins',
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://belaartmarmoraria.com.br'),
   title: {
-    default: "Bela Art Mármores | Marmoraria em Paranavaí",
-    template: "%s | Bela Art Mármores",
+    default: 'Bela Art Marmoraria | Mármores, Granitos e Quartzos em Paranavaí',
+    template: '%s | Bela Art Marmoraria',
   },
   description:
-    "Marmoraria em Paranavaí há mais de 15 anos. Trabalhamos com bancadas de granito, quartzo, mármores, pias sob medida, revestimentos e projetos personalizados. Qualidade premium e instalação profissional.",
+    'Bela Art Marmoraria em Paranavaí/PR — bancadas de granito, quartzo, pias, escadas e projetos personalizados. Excelência em mármores e granitos com acabamento premium.',
   keywords: [
-    "marmoraria em Paranavaí",
-    "granito em Paranavaí",
-    "bancada de granito Paranavaí",
-    "mármore Paranavaí",
-    "bancada de quartzo",
-    "pias sob medida",
-    "revestimentos",
-    "marmoraria",
+    'marmoraria em Paranavaí',
+    'granito em Paranavaí',
+    'bancada de granito Paranavaí',
+    'mármore Paranavaí',
+    'quartzo Paranavaí',
+    'bancada de cozinha',
+    'escadas de granito',
+    'marmoraria Paranavaí PR',
+    'Bela Art Marmoraria',
   ],
   openGraph: {
-    title: "Bela Art Mármores | Marmoraria em Paranavaí",
+    title: 'Bela Art Marmoraria — Arte em Pedra desde Paranavaí',
     description:
-      "Transformando pedras em obras de arte. Marmoraria em Paranavaí há mais de 15 anos.",
-    url: "https://belaartmarmores.com.br",
-    siteName: "Bela Art Mármores",
-    locale: "pt_BR",
-    type: "website",
+      'Transformando pedras em obras de arte. Bancadas, pias, escadas e projetos personalizados em mármore, granito e quartzo.',
+    url: 'https://belaartmarmoraria.com.br',
+    siteName: 'Bela Art Marmoraria',
+    locale: 'pt_BR',
+    type: 'website',
+    images: [
+      {
+        url: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80',
+        width: 1200,
+        height: 630,
+        alt: 'Bela Art Marmoraria — Mármores e Granitos em Paranavaí',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Bela Art Marmoraria | Paranavaí',
+    description: 'Marmoraria premium em Paranavaí — bancadas, escadas, pias e projetos personalizados.',
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
-  metadataBase: new URL("https://belaartmarmores.com.br"),
-};
-
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
+  alternates: {
+    canonical: 'https://belaartmarmoraria.com.br',
+  },
 };
 
 const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  name: "Bela Art Mármores",
-  image: "https://belaartmarmores.com.br/og-image.jpg",
-  url: "https://belaartmarmores.com.br",
-  telephone: "+5544998078099",
-  email: "contato@belaartmarmores.com.br",
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: 'Bela Art Marmoraria',
   description:
-    "Marmoraria especializada em bancadas de granito, quartzo, mármores, pias sob medida, revestimentos e projetos personalizados em Paranavaí e região.",
+    'Marmoraria especializada em bancadas de granito, quartzo, pias, escadas e projetos personalizados em Paranavaí/PR.',
+  url: 'https://belaartmarmoraria.com.br',
+  telephone: '+5544998078099',
+  email: 'contato@belaartmarmoraria.com.br',
   address: {
-    "@type": "PostalAddress",
-    streetAddress: "Av. Deputado Heitor de Alencar Furtado, 1280",
-    addressLocality: "Paranavaí",
-    addressRegion: "PR",
-    postalCode: "87711-000",
-    addressCountry: "BR",
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: -23.0788,
-    longitude: -52.4655,
+    '@type': 'PostalAddress',
+    streetAddress: 'Av. Deputado Heitor de Alencar Furtado, 1280',
+    addressLocality: 'Paranavaí',
+    addressRegion: 'PR',
+    postalCode: '87711-000',
+    addressCountry: 'BR',
   },
   openingHoursSpecification: [
     {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "07:30",
-      closes: "18:00",
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '08:00',
+      closes: '18:00',
     },
     {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: "Saturday",
-      opens: "07:30",
-      closes: "12:00",
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: 'Saturday',
+      opens: '08:00',
+      closes: '12:00',
     },
   ],
-  areaServed: [
-    {
-      "@type": "City",
-      name: "Paranavaí",
-    },
-    {
-      "@type": "State",
-      name: "Paraná",
-    },
-  ],
-  priceRange: "$$",
-  sameAs: [
-    "https://www.instagram.com/bela_art_marmoraria/",
-    "https://wa.me/5544998078099",
-  ],
+  image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80',
+  areaServed: {
+    '@type': 'City',
+    name: 'Paranavaí',
+  },
+  priceRange: '$$',
+  sameAs: ['https://instagram.com/belaartmarmoraria'],
 };
 
 export default function RootLayout({
@@ -115,19 +121,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="pt-BR"
-      className={`${inter.variable} ${playfairDisplay.variable} h-full antialiased`}
-    >
+    <html lang="pt-BR" className={`${inter.variable} ${poppins.variable}`}>
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-full flex flex-col bg-marble-100 text-marble-900 font-sans">
+      <body className="min-h-screen bg-preto font-sans text-white antialiased">
         <Header />
-        <main className="flex-1 pt-16 lg:pt-20">{children}</main>
+        <main className="relative">{children}</main>
         <Footer />
         <WhatsAppButton />
       </body>
