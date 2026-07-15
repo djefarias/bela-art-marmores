@@ -19,61 +19,52 @@ import {
 import SectionWrapper from '@/components/SectionWrapper';
 import ServiceCard from '@/components/ServiceCard';
 
-// === Image Placeholders (Unsplash) ===
+// === Imagens Reais Bela Art ===
 const IMG = {
-  hero: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1920&q=80',
-  heroSm: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
-  granite: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=80',
-  quartz: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80',
-  kitchen: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80',
-  stairs: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80',
-  bathroom: 'https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=800&q=80',
-  marble: 'https://images.unsplash.com/photo-1519669012111-f0cd6885107d?w=800&q=80',
-  gourmet: 'https://images.unsplash.com/photo-1577140917170-285929fb55b7?w=800&q=80',
-  project: 'https://images.unsplash.com/photo-1615529328331-f8917597711f?w=800&q=80',
-  living: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80',
-};
+  hero: '/fotos/ilhas-gourmet/Ilhas Gourmet_1.jpg',
+  heroSm: '/fotos/ilhas-gourmet/Ilhas Gourmet_1.jpg',
+}
 
 const SERVICES = [
   {
     title: 'Bancadas de Granito',
     description: 'Granitos nacionais e importados para cozinhas, banheiros e áreas gourmet. Resistência e elegância em cada peça.',
-    image: IMG.granite,
+    image: '/fotos/cozinhas/Cozinhas_2.jpg',
   },
   {
     title: 'Bancadas de Quartzo',
     description: 'Superfícies de quartzo-engineered com alta durabilidade, fácil manutenção e design contemporâneo.',
-    image: IMG.quartz,
+    image: '/fotos/cozinhas/Cozinhas_3.jpg',
   },
   {
     title: 'Pias e Lavatórios',
     description: 'Pias esculpidas em mármore e granito, peças únicas que combinam funcionalidade e arte.',
-    image: IMG.bathroom,
+    image: '/fotos/lavatorio-esculpido/lavatorio_escupido_5.jpg',
   },
   {
     title: 'Escadas em Pedra',
     description: 'Escadas monumentais em granito e mármore com acabamento impecável para dar um toque de sofisticação ao seu espaço.',
-    image: IMG.stairs,
+    image: '/fotos/cozinhas/Cozinhas_1.jpg',
   },
   {
     title: 'Áreas Gourmet',
     description: 'Projetos completos para áreas gourmet com ilhas, bancadas e revestimentos em pedra natural.',
-    image: IMG.gourmet,
+    image: '/fotos/ilhas-gourmet/Ilhas Gourmet_1.jpg',
   },
   {
     title: 'Projetos Personalizados',
     description: 'Sob medida para sua obra. Consultoria, projeto, fabricação e instalação com padrão premium.',
-    image: IMG.project,
+    image: '/fotos/ilhas-gourmet/Ilhas Gourmet_2.jpg',
   },
 ];
 
 const GALLERY = [
-  { src: IMG.kitchen, alt: 'Bancada de granito em cozinha' },
-  { src: IMG.marble, alt: 'Mármore em projeto residencial' },
-  { src: IMG.stairs, alt: 'Escada de granito' },
-  { src: IMG.living, alt: 'Projeto integrado com pedra natural' },
-  { src: IMG.quartz, alt: 'Bancada de quartzo em cozinha' },
-  { src: IMG.gourmet, alt: 'Área gourmet com ilha de granito' },
+  { src: '/fotos/cozinhas/Cozinhas_1.jpg', alt: 'Bancada de granito em cozinha' },
+  { src: '/fotos/lavatorio-suspenso/Lavatorio_Retangular_B70_1.jpg', alt: 'Lavatório suspenso em granito' },
+  { src: '/fotos/cuba-sobrepor/Cuba_Redonda_Branca.jpg', alt: 'Cuba de sobrepor em granito' },
+  { src: '/fotos/cozinhas/Cozinhas_2.jpg', alt: 'Cozinha com bancada de granito' },
+  { src: '/fotos/ilhas-gourmet/Ilhas Gourmet_1.jpg', alt: 'Ilha gourmet em granito' },
+  { src: '/fotos/lavatorio-esculpido/lavatorio_escupido_5.jpg', alt: 'Lavatório esculpido em pedra natural' },
 ];
 
 const BENEFITS = [
@@ -108,7 +99,7 @@ const BLOG_POSTS = [
     excerpt: 'Saiba como limpar, selar e conservar sua bancada de granito para mantê-la impecável por muitos anos.',
     date: '15 Jun 2026',
     readTime: '4 min',
-    image: IMG.kitchen,
+    image: '/fotos/cozinhas/Cozinhas_1.jpg',
   },
   {
     slug: 'granito-vs-quartzo',
@@ -116,7 +107,7 @@ const BLOG_POSTS = [
     excerpt: 'Comparativo completo entre granito natural e quartzo engineered para ajudar na sua escolha.',
     date: '05 Jun 2026',
     readTime: '6 min',
-    image: IMG.quartz,
+    image: '/fotos/cozinhas/Cozinhas_2.jpg',
   },
   {
     slug: 'tendencias-marmores-2026',
@@ -124,7 +115,7 @@ const BLOG_POSTS = [
     excerpt: 'Descubra as cores, texturas e acabamentos que estão em alta neste ano.',
     date: '25 Mai 2026',
     readTime: '5 min',
-    image: IMG.marble,
+    image: '/fotos/lavatorio-suspenso/Lavatorio_Retangular_B70_2.jpg',
   },
 ];
 
