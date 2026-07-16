@@ -29,7 +29,7 @@ const SERVICES = [
   {
     title: 'Bancadas de Granito',
     description: 'Granitos nacionais e importados para cozinhas, banheiros e áreas gourmet. Resistência e elegância em cada peça.',
-    image: '/fotos/cozinhas/Cozinhas_2.jpg',
+    image: '/fotos/cozinhas/Bancada_granito_branca.jpg',
   },
   {
     title: 'Bancadas de Quartzo',
