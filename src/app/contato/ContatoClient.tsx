@@ -17,7 +17,7 @@ export default function ContatoClient() {
     e.preventDefault();
     setSending(true);
     const msg = `Olá! Me chamo ${form.name}.%0A%0A${form.message}%0A%0ATelefone: ${form.phone}%0AEmail: ${form.email}`;
-    const url = `https://wa.me/5544999999999?text=${msg}`;
+    const url = `https://wa.me/554498078099?text=${msg}`;
     window.open(url, '_blank');
     setTimeout(() => setSending(false), 1000);
   };
@@ -150,12 +150,12 @@ export default function ContatoClient() {
                       <div>
                         <h4 className="text-white text-sm font-medium">WhatsApp</h4>
                         <a
-                          href="https://wa.me/5544999999999"
+                          href="https://wa.me/554498078099"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-green-400 text-sm hover:text-green-300 transition-colors duration-300"
                         >
-                          (44) 99999-9999
+                          (44) 9807-8099
                         </a>
                         <p className="text-gray-500 text-xs mt-1">Respondemos em até 2 horas</p>
                       </div>
@@ -167,7 +167,7 @@ export default function ContatoClient() {
                       </div>
                       <div>
                         <h4 className="text-white text-sm font-medium">Telefone</h4>
-                        <a href="tel:44999999999" className="text-gray-300 text-sm hover:text-dourado transition-colors duration-300">(44) 99999-9999</a>
+                        <a href="tel:+554498078099" className="text-gray-300 text-sm hover:text-dourado transition-colors duration-300">(44) 9807-8099</a>
                       </div>
                     </div>
 

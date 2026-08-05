@@ -11,7 +11,7 @@ interface ServiceCardProps {
 
 export default function ServiceCard({ title, description, image, index = 0 }: ServiceCardProps) {
   const handleWhatsApp = () => {
-    const url = `https://wa.me/5544999999999?text=${encodeURIComponent(`Olá! Gostaria de saber mais sobre ${title}.`)}`;
+    const url = `https://wa.me/554498078099?text=${encodeURIComponent(`Olá! Gostaria de saber mais sobre ${title}.`)}`;
     window.open(url, '_blank');
   };
 

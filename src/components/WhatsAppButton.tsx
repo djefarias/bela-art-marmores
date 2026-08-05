@@ -2,7 +2,7 @@
 
 import { FaWhatsapp } from 'react-icons/fa';
 
-const WHATSAPP_NUMBER = '5544999999999'; // placeholder
+const WHATSAPP_NUMBER = '554498078099';
 const WHATSAPP_MESSAGE = 'Olá! Gostaria de um orçamento para minha obra.';
 
 export default function WhatsAppButton() {

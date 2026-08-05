@@ -116,7 +116,6 @@ export default function SobreClient() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-preto/50 to-transparent" />
                   <span className="absolute bottom-3 left-3 text-xs text-white/60 bg-preto/50 px-2 py-1 rounded">
-                    Imagem ilustrativa
                   </span>
                 </div>
                 {/* Gold accent */}

@@ -95,11 +95,11 @@ export default function Header() {
           <div className="flex items-center gap-3">
             {/* Phone (desktop) */}
             <a
-              href="tel:44999999999"
+              href="tel:+554498078099"
               className="hidden md:flex items-center gap-2 text-xs text-gray-400 hover:text-dourado transition-colors duration-300"
             >
               <FaPhone size={12} />
-              <span>(44) 99999-9999</span>
+              <span>(44) 9807-8099</span>
             </a>
 
             {/* Orçamento Button */}

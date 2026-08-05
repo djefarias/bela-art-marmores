@@ -87,7 +87,6 @@ export default function GalleryClient({ images }: { images: GalleryImage[] }) {
                 {selected.description}
               </p>
               <p className="text-marble-600 text-xs mt-2">
-                * Imagem ilustrativa
               </p>
             </div>
           </div>

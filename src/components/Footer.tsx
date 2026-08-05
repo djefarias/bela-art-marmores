@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { FaWhatsapp, FaInstagram, FaMapMarkerAlt, FaClock, FaEnvelope, FaPhone, FaLongArrowAltRight } from 'react-icons/fa';
 
-const WHATSAPP_NUMBER = '5544999999999';
+const WHATSAPP_NUMBER = '554498078099';
 const INSTAGRAM_URL = 'https://instagram.com/belaartmarmoraria';
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
 
@@ -116,8 +116,8 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <FaMapMarkerAlt className="text-dourado mt-0.5 flex-shrink-0" size={14} />
                 <span className="text-gray-400 text-sm">
-                  Rua Exemplo, 123 — Centro<br />
-                  Paranavaí, PR — 87700-000
+                  Avenida Deputado, Rod. Heitor de Alencar Furtado, 1280 —<br />
+                  Jardim Sao Jorge, Paranavaí, PR — 87711-000
                 </span>
               </li>
               <li>
@@ -128,16 +128,16 @@ export default function Footer() {
                   className="flex items-center gap-3 text-gray-400 hover:text-green-400 transition-colors duration-300 text-sm"
                 >
                   <FaWhatsapp className="flex-shrink-0" size={14} />
-                  (44) 99999-9999
+                  (44) 9807-8099
                 </a>
               </li>
               <li>
                 <a
-                  href="tel:44999999999"
+                  href="tel:+554498078099"
                   className="flex items-center gap-3 text-gray-400 hover:text-dourado transition-colors duration-300 text-sm"
                 >
                   <FaPhone className="flex-shrink-0" size={14} />
-                  (44) 99999-9999
+                  (44) 9807-8099
                 </a>
               </li>
               <li>

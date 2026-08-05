@@ -126,7 +126,7 @@ export default function Home() {
   const handleContactSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const msg = `Olá! Me chamo ${contactForm.name}. ${contactForm.message}`;
-    const url = `https://wa.me/5544999999999?text=${encodeURIComponent(msg)}`;
+    const url = `https://wa.me/554498078099?text=${encodeURIComponent(msg)}`;
     window.open(url, '_blank');
   };
 
@@ -263,7 +263,6 @@ export default function Home() {
                     </Link>
                   </div>
                   <span className="absolute bottom-3 left-3 text-xs text-white/60 bg-preto/50 px-2 py-1 rounded backdrop-blur-sm">
-                    Imagem ilustrativa
                   </span>
                 </div>
               ))}
@@ -428,7 +427,7 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href={`https://wa.me/5544999999999?text=${encodeURIComponent('Olá! Gostaria de um orçamento para meu projeto.')}`}
+              href={`https://wa.me/554498078099?text=${encodeURIComponent('Olá! Gostaria de um orçamento para meu projeto.')}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 text-base font-bold text-white btn-red rounded-xl shadow-lg"
@@ -493,7 +492,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="font-heading text-white font-semibold mb-1">Telefone</h4>
-                    <a href="tel:44999999999" className="text-gray-400 text-sm hover:text-dourado transition-colors duration-300">(44) 99999-9999</a>
+                    <a href="tel:+554498078099" className="text-gray-400 text-sm hover:text-dourado transition-colors duration-300">(44) 9807-8099</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">

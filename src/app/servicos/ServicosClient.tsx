@@ -112,7 +112,7 @@ const SERVICES_DETAIL: ServiceDetail[] = [
 
 export default function ServicosClient() {
   const handleWhatsApp = (serviceTitle: string) => {
-    const url = `https://wa.me/5544999999999?text=${encodeURIComponent(`Olá! Gostaria de saber mais sobre ${serviceTitle}.`)}`;
+    const url = `https://wa.me/554498078099?text=${encodeURIComponent(`Olá! Gostaria de saber mais sobre ${serviceTitle}.`)}`;
     window.open(url, '_blank');
   };
 
@@ -178,7 +178,7 @@ export default function ServicosClient() {
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-preto/50 to-transparent" />
                         <span className="absolute bottom-3 left-3 text-xs text-white/60 bg-preto/50 px-2 py-1 rounded backdrop-blur-sm">
-                          Imagem ilustrativa
+                          
                         </span>
                       </div>
                     </div>

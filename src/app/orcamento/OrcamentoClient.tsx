@@ -50,7 +50,7 @@ export default function OrcamentoClient() {
       `*Mensagem:* ${form.message || '—'}`,
     ];
 
-    const url = `https://wa.me/5544999999999?text=${encodeURIComponent(msgParts.join('\n'))}`;
+    const url = `https://wa.me/554498078099?text=${encodeURIComponent(msgParts.join('\n'))}`;
     window.open(url, '_blank');
 
     setTimeout(() => {
@@ -308,7 +308,7 @@ export default function OrcamentoClient() {
           <p className="text-gray-400 text-sm">
             Prefere falar diretamente?{' '}
             <a
-              href="https://wa.me/5544999999999"
+              href="https://wa.me/554498078099"
               target="_blank"
               rel="noopener noreferrer"
               className="text-dourado hover:text-dourado-claro transition-colors duration-300"

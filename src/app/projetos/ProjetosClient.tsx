@@ -180,7 +180,6 @@ export default function ProjetosClient() {
                     </div>
 
                     <span className="absolute bottom-3 right-3 text-[10px] text-white/40">
-                      Ilustrativa
                     </span>
                   </div>
                 </SectionWrapper>

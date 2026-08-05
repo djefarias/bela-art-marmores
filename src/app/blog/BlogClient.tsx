@@ -205,7 +205,7 @@ export default function BlogClient() {
             Novos artigos toda semana. Acompanhe nosso blog e receba dicas exclusivas sobre pedras naturais.
           </p>
           <a
-            href={`https://wa.me/5544999999999?text=${encodeURIComponent('Olá! Quero receber dicas sobre mármores e granitos.')}`}
+            href={`https://wa.me/554498078099?text=${encodeURIComponent('Olá! Quero receber dicas sobre mármores e granitos.')}`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 text-base font-bold text-white btn-red rounded-xl"
