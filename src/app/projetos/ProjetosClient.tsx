@@ -35,11 +35,10 @@ const GALLERY: GalleryItem[] = [
   { src: IMG.bathroom, alt: 'Lavatório em mármore', category: 'Lavatórios', title: 'Lavatório em Mármore Travertino' },
   { src: IMG.project, alt: 'Projeto personalizado em granito', category: 'Projetos', title: 'Projeto Comercial Personalizado' },
   { src: IMG.granite, alt: 'Bancada de granito detalhe', category: 'Bancadas', title: 'Bancada em Granito Verde Ubatuba' },
-  { src: IMG.stairs, alt: 'Escada residencial em granito', category: 'Escadas', title: 'Escada Residencial em Granito' },
   { src: IMG.kitchen, alt: 'Bancada de cozinha em quartzo', category: 'Bancadas', title: 'Cozinha em Quartzo Bege' },
 ];
 
-const CATEGORIES = ['Todos', 'Bancadas', 'Escadas', 'Lavatórios', 'Área Gourmet', 'Projetos'];
+const CATEGORIES = ['Todos', 'Bancadas', 'Lavatórios', 'Área Gourmet', 'Projetos'];
 
 export default function ProjetosClient() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
