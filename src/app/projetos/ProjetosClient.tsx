@@ -28,8 +28,8 @@ interface GalleryItem {
 
 const GALLERY: GalleryItem[] = [
   { src: IMG.kitchen, alt: 'Bancada de granito em cozinha planejada', category: 'Bancadas', title: 'Bancada em Granito Preto São Gabriel' },
-  { src: IMG.stairs, alt: 'Escada de granito', category: 'Escadas', title: 'Escada em Granito Polido' },
-  { src: IMG.quartz, alt: 'Bancada de quartzo em cozinha moderna', category: 'Bancadas', title: 'Bancada em Quartzo Branco Polar' },
+  { src: '/fotos/cozinhas/cliente-2.jpg', alt: 'Cozinha com bancada de granito escuro', category: 'Bancadas', title: 'Cozinha em Granito Verde' },
+  { src: '/fotos/cozinhas/cliente-3.jpg', alt: 'Bancada de granito em cozinha moderna', category: 'Bancadas', title: 'Bancada em Granito Especado' },
   { src: IMG.gourmet, alt: 'Área gourmet com ilha de granito', category: 'Área Gourmet', title: 'Ilha Gourmet em Granito' },
   { src: IMG.living, alt: 'Projeto integrado sala e cozinha', category: 'Projetos', title: 'Projeto Residencial Integrado' },
   { src: IMG.bathroom, alt: 'Lavatório em mármore', category: 'Lavatórios', title: 'Lavatório em Mármore Travertino' },
