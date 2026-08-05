@@ -27,9 +27,8 @@ interface GalleryItem {
 }
 
 const GALLERY: GalleryItem[] = [
-  { src: IMG.kitchen, alt: 'Bancada de granito em cozinha planejada', category: 'Bancadas', title: 'Bancada em Granito Preto São Gabriel' },
-  { src: '/fotos/cozinhas/cliente-2.jpg', alt: 'Cozinha com bancada de granito escuro', category: 'Bancadas', title: 'Cozinha em Granito Verde' },
-  { src: '/fotos/cozinhas/cliente-3.jpg', alt: 'Bancada de granito em cozinha moderna', category: 'Bancadas', title: 'Bancada em Granito Especado' },
+  { src: IMG.kitchen, alt: 'Bancada de granito em cozinha planejada', category: 'Bancadas', title: '' },
+  { src: '/fotos/cozinhas/cliente-2.jpg', alt: 'Cozinha com bancada de granito escuro', category: 'Bancadas', title: '' },
   { src: IMG.gourmet, alt: 'Área gourmet com ilha de granito', category: 'Área Gourmet', title: 'Ilha Gourmet em Granito' },
   { src: '/fotos/cozinhas/coz-1.jpg', alt: 'Cozinha planejada com bancada em pedra', category: 'Cozinhas', title: 'Cozinha 1' },
   { src: '/fotos/cozinhas/coz-2.jpg', alt: 'Cozinha moderna com bancada em pedra', category: 'Cozinhas', title: 'Cozinha 2' },
@@ -38,8 +37,7 @@ const GALLERY: GalleryItem[] = [
   { src: '/fotos/cozinhas/coz-5.jpg', alt: 'Cozinha planejada em granito', category: 'Cozinhas', title: 'Cozinha 5' },
   { src: '/fotos/cozinhas/coz-6.jpg', alt: 'Cozinha contemporânea com bancada', category: 'Cozinhas', title: 'Cozinha 6' },
   { src: IMG.bathroom, alt: 'Lavatório em mármore', category: 'Lavatórios', title: 'Lavatório em Mármore Travertino' },
-  { src: IMG.granite, alt: 'Bancada de granito detalhe', category: 'Bancadas', title: 'Bancada em Granito Verde Ubatuba' },
-  { src: IMG.kitchen, alt: 'Bancada de cozinha em quartzo', category: 'Bancadas', title: 'Cozinha em Quartzo Bege' },
+  { src: IMG.kitchen, alt: 'Bancada de cozinha em quartzo', category: 'Bancadas', title: '' },
 ];
 
 const CATEGORIES = ['Todos', 'Bancadas', 'Lavatórios', 'Área Gourmet', 'Cozinhas'];
