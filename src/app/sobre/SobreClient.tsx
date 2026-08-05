@@ -5,7 +5,7 @@ import { FaWhatsapp, FaGem, FaBullseye, FaEye, FaHeart, FaStar, FaAward, FaUsers
 import SectionWrapper from '@/components/SectionWrapper';
 
 const IMG = {
-  hero: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1920&q=80',
+  hero: '/fotos/sobre/cozinha-l-branca.jpg',
   team: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80',
   workshop: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=80',
   project: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80',
