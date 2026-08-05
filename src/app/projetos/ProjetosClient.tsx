@@ -7,16 +7,16 @@ import { FaMagnifyingGlass } from 'react-icons/fa6';
 import SectionWrapper from '@/components/SectionWrapper';
 
 const IMG = {
-  kitchen: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80',
-  marble: 'https://images.unsplash.com/photo-1519669012111-f0cd6885107d?w=800&q=80',
-  stairs: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80',
-  living: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80',
-  quartz: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80',
-  gourmet: 'https://images.unsplash.com/photo-1577140917170-285929fb55b7?w=800&q=80',
-  granite: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=80',
-  bathroom: 'https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=800&q=80',
-  project: 'https://images.unsplash.com/photo-1615529328331-f8917597711f?w=800&q=80',
-  hero: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
+  kitchen: '/projetos/granito-preto-1.jpg',
+  marble: '/projetos/marmore-carrara-1.jpg',
+  stairs: '/projetos/escada-granito-1.jpg',
+  living: '/projetos/granito-verde-1.jpg',
+  quartz: '/projetos/quartzo-bancada-1.jpg',
+  gourmet: '/projetos/area-gourmet-1.jpg',
+  granite: '/projetos/granito-bancada-1.jpg',
+  bathroom: '/projetos/lavatorio-1.jpg',
+  project: '/projetos/granito-bancada-1.jpg',
+  hero: '/projetos/marmore-carrara-1.jpg',
 };
 
 interface GalleryItem {

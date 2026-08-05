@@ -23,8 +23,7 @@ import ServiceCard from '@/components/ServiceCard';
 const IMG = {
   hero: '/fotos/ilhas-gourmet/Ilhas Gourmet_1.jpg',
   heroSm: '/fotos/ilhas-gourmet/Ilhas Gourmet_1.jpg',
-}
-
+};
 const SERVICES = [
   {
     title: 'Bancadas de Granito',
