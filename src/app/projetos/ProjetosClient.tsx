@@ -28,7 +28,6 @@ interface GalleryItem {
 
 const GALLERY: GalleryItem[] = [
   { src: IMG.kitchen, alt: 'Bancada de granito em cozinha planejada', category: 'Bancadas', title: 'Bancada em Granito Preto São Gabriel' },
-  { src: IMG.marble, alt: 'Mármore em sala de estar', category: 'Revestimentos', title: 'Parede em Mármore Carrara' },
   { src: IMG.stairs, alt: 'Escada de granito', category: 'Escadas', title: 'Escada em Granito Polido' },
   { src: IMG.quartz, alt: 'Bancada de quartzo em cozinha moderna', category: 'Bancadas', title: 'Bancada em Quartzo Branco Polar' },
   { src: IMG.gourmet, alt: 'Área gourmet com ilha de granito', category: 'Área Gourmet', title: 'Ilha Gourmet em Granito' },
@@ -36,12 +35,11 @@ const GALLERY: GalleryItem[] = [
   { src: IMG.bathroom, alt: 'Lavatório em mármore', category: 'Lavatórios', title: 'Lavatório em Mármore Travertino' },
   { src: IMG.project, alt: 'Projeto personalizado em granito', category: 'Projetos', title: 'Projeto Comercial Personalizado' },
   { src: IMG.granite, alt: 'Bancada de granito detalhe', category: 'Bancadas', title: 'Bancada em Granito Verde Ubatuba' },
-  { src: IMG.hero, alt: 'Mármore branco em projeto premium', category: 'Revestimentos', title: 'Mármore Branco em Hall Social' },
   { src: IMG.stairs, alt: 'Escada residencial em granito', category: 'Escadas', title: 'Escada Residencial em Granito' },
   { src: IMG.kitchen, alt: 'Bancada de cozinha em quartzo', category: 'Bancadas', title: 'Cozinha em Quartzo Bege' },
 ];
 
-const CATEGORIES = ['Todos', 'Bancadas', 'Escadas', 'Lavatórios', 'Área Gourmet', 'Revestimentos', 'Projetos'];
+const CATEGORIES = ['Todos', 'Bancadas', 'Escadas', 'Lavatórios', 'Área Gourmet', 'Projetos'];
 
 export default function ProjetosClient() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
