@@ -104,7 +104,7 @@ export default function Header() {
 
             {/* Orçamento Button */}
             <Link
-              href="/orcamento"
+              href="https://wa.me/554498078099?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento."
               className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-white btn-red rounded-lg"
             >
               <FaWhatsapp size={16} />
@@ -155,7 +155,7 @@ export default function Header() {
 
           {/* Mobile CTA */}
           <Link
-            href="/orcamento"
+            href="https://wa.me/554498078099?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento."
             className="w-full mt-4 text-center py-4 text-lg font-bold text-white btn-red rounded-xl"
             style={{
               transitionDelay: '350ms',
