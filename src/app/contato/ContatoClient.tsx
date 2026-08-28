@@ -213,7 +213,7 @@ export default function ContatoClient() {
                     Solicite seu orçamento diretamente pelo WhatsApp agora mesmo.
                   </p>
                   <Link
-                    href="/orcamento"
+                    href="https://wa.me/554498078099?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento."
                     className="inline-flex items-center gap-2 px-6 py-3 text-sm font-bold text-white btn-red rounded-xl"
                   >
                     <FaWhatsapp size={16} />
