@@ -71,40 +71,19 @@ export default function SobreClient() {
               <div>
                 <span className="text-dourado text-xs font-medium uppercase tracking-[0.3em]">Nossa História</span>
                 <h2 className="font-heading text-3xl sm:text-4xl font-bold text-white mt-3 mb-6">
-                  Mais de 15 Anos de Dedicação à Pedra Natural
+                  Dedicação e Qualidade em Cada Projeto
                 </h2>
                 <div className="divider-gold-wide" />
                 <div className="space-y-4 mt-6 text-gray-400 leading-relaxed">
                   <p>
-                    A Bela Art Marmoraria nasceu em Paranavaí da paixão de seu fundador, João Silva,
-                    pela arte de trabalhar pedras naturais. Começamos como uma pequena oficina e, ao longo
-                    de mais de 15 anos, nos tornamos referência em marmoraria premium na região Noroeste do Paraná.
+                    Na Bela Art Marmoraria, cada projeto é desenvolvido com atenção aos detalhes, desde a escolha da pedra até o acabamento e a instalação.
                   </p>
                   <p>
-                    Nosso diferencial sempre foi o cuidado artesanal combinado com tecnologia de ponta.
-                    Cada peça que sai da nossa oficina é resultado de planejamento, precisão e amor pelo que fazemos.
-                    Selecionamos pessoalmente os melhores granitos, mármores e quartzos do mercado.
+                    Trabalhamos com granitos, mármores, quartzitos e outras superfícies para criar soluções sob medida para cada ambiente. Unimos precisão, cuidado no acabamento e atenção às necessidades de cada cliente, buscando valorizar cozinhas, banheiros, áreas gourmet, escadas e outros espaços residenciais e comerciais.
                   </p>
                   <p>
-                    Já realizamos centenas de projetos — desde cozinhas residenciais até grandes empreendimentos
-                    comerciais. Cada cliente é único, e cada projeto recebe a mesma dedicação: a de fazer da sua obra
-                    algo verdadeiramente especial.
+                    Cada projeto é único. Por isso, acompanhamos todas as etapas com o compromisso de entregar peças bem executadas, funcionais e alinhadas ao estilo de cada ambiente.
                   </p>
-                </div>
-
-                <div className="flex flex-wrap gap-8 mt-8">
-                  <div className="text-center">
-                    <span className="font-heading text-3xl font-bold text-dourado">15+</span>
-                    <p className="text-gray-500 text-xs mt-1">Anos de Experiência</p>
-                  </div>
-                  <div className="text-center">
-                    <span className="font-heading text-3xl font-bold text-dourado">500+</span>
-                    <p className="text-gray-500 text-xs mt-1">Projetos Realizados</p>
-                  </div>
-                  <div className="text-center">
-                    <span className="font-heading text-3xl font-bold text-dourado">98%</span>
-                    <p className="text-gray-500 text-xs mt-1">Clientes Satisfeitos</p>
-                  </div>
                 </div>
               </div>
 

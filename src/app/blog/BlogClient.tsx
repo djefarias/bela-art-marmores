@@ -26,7 +26,7 @@ const ALL_POSTS = [
     content: 'Guia completo de cuidados...',
     date: '15 Jun 2026',
     readTime: '4 min',
-    image: IMG.kitchen,
+    image: '/blog/cuidados-bancada-granito.jpg',
     category: 'Dicas',
   },
   {
@@ -36,7 +36,7 @@ const ALL_POSTS = [
     content: 'Comparativo detalhado...',
     date: '05 Jun 2026',
     readTime: '6 min',
-    image: IMG.quartz,
+    image: '/blog/granito-vs-quartzo.jpg',
     category: 'Comparativos',
   },
   {
@@ -46,7 +46,7 @@ const ALL_POSTS = [
     content: 'Tendências do ano...',
     date: '25 Mai 2026',
     readTime: '5 min',
-    image: IMG.marble,
+    image: '/blog/tendencias-marmores-2026.jpg',
     category: 'Tendências',
   },
   {
@@ -55,7 +55,7 @@ const ALL_POSTS = [
     excerpt: 'Guia prático para escolher entre granito, quartzo, mármore e outros materiais para sua bancada.',
     date: '15 Mai 2026',
     readTime: '7 min',
-    image: IMG.living,
+    image: '/blog/como-escolher-bancada-cozinha.jpg',
     category: 'Dicas',
   },
   {
@@ -64,7 +64,7 @@ const ALL_POSTS = [
     excerpt: 'O mármore branco exige cuidados específicos. Saiba como mantê-lo sempre bonito.',
     date: '05 Mai 2026',
     readTime: '4 min',
-    image: IMG.bathroom,
+    image: '/blog/cuidados-marmore-branco.jpg',
     category: 'Dicas',
   },
   {
@@ -73,7 +73,7 @@ const ALL_POSTS = [
     excerpt: 'Vantagens das escadas em granito, tipos de acabamento e dicas de instalação.',
     date: '25 Abr 2026',
     readTime: '5 min',
-    image: IMG.stairs,
+    image: '/blog/escadas-granito-seguranca-e-estilo.jpg',
     category: 'Projetos',
   },
   {
@@ -82,7 +82,7 @@ const ALL_POSTS = [
     excerpt: 'Descubra por que o quartzo engineered tem se tornado a escolha favorita para cozinhas modernas.',
     date: '15 Abr 2026',
     readTime: '4 min',
-    image: IMG.project,
+    image: '/blog/bancada-quartzo-vantagens.jpg',
     category: 'Comparativos',
   },
   {
@@ -91,7 +91,7 @@ const ALL_POSTS = [
     excerpt: 'Dicas de design e materiais para criar sua área gourmet dos sonhos.',
     date: '05 Abr 2026',
     readTime: '6 min',
-    image: IMG.gourmet,
+    image: '/blog/area-gourmet-projeto-pedra.jpg',
     category: 'Projetos',
   },
   {
@@ -100,7 +100,7 @@ const ALL_POSTS = [
     excerpt: 'Entenda a importância da selagem, quando fazer e como escolher o produto certo.',
     date: '25 Mar 2026',
     readTime: '5 min',
-    image: IMG.kitchen,
+    image: '/blog/selagem-granito-guia.jpg',
     category: 'Dicas',
   },
   {
@@ -109,7 +109,7 @@ const ALL_POSTS = [
     excerpt: 'Transforme sua fachada com revestimentos em pedra natural. Opções, custos e cuidados.',
     date: '15 Mar 2026',
     readTime: '6 min',
-    image: IMG.marble,
+    image: '/blog/revestimento-pedra-fachada.jpg',
     category: 'Projetos',
   },
   {
@@ -118,7 +118,7 @@ const ALL_POSTS = [
     excerpt: 'Tudo sobre o granito Preto São Gabriel, um dos mais requisitados para projetos premium.',
     date: '05 Mar 2026',
     readTime: '4 min',
-    image: IMG.stairs,
+    image: '/blog/granito-preto-sao-gabriel.jpg',
     category: 'Materiais',
   },
   {
@@ -127,7 +127,7 @@ const ALL_POSTS = [
     excerpt: 'Manutenção simples para manter sua bancada de quartzo sempre nova.',
     date: '25 Fev 2026',
     readTime: '3 min',
-    image: IMG.quartz,
+    image: '/blog/cuidados-bancada-quartzo.jpg',
     category: 'Dicas',
   },
 ];
