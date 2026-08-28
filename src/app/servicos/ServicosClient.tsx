@@ -6,15 +6,15 @@ import { FaStairs } from 'react-icons/fa6';
 import SectionWrapper from '@/components/SectionWrapper';
 
 const IMG = {
-  granite: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=80',
-  quartz: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80',
+  granite: '/servicos/bancada-granito.jpg',
+  quartz: '/servicos/bancada-quartzo.jpg',
   kitchen: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80',
-  stairs: '/projetos/escada-granito-1.jpg',
-  bathroom: '/projetos/lavatorio-1.jpg',
-  marble: '/projetos/marmore-carrara-1.jpg',
-  gourmet: '/projetos/area-gourmet-1.jpg',
-  project: '/projetos/granito-bancada-1.jpg',
-  living: '/projetos/granito-verde-1.jpg',
+  stairs: '/servicos/escadas-pedra.jpg',
+  bathroom: '/servicos/pias-lavatorios.jpg',
+  marble: '/servicos/revestimentos-pedra.jpg',
+  gourmet: '/servicos/areas-gourmet.jpg',
+  project: '/servicos/projetos-personalizados.jpg',
+  living: '/servicos/mesas-pedra.jpg',
 };
 
 interface ServiceDetail {
