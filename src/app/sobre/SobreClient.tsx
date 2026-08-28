@@ -7,7 +7,7 @@ import SectionWrapper from '@/components/SectionWrapper';
 const IMG = {
   hero: '/fotos/sobre/cozinha-l-branca.jpg',
   team: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80',
-  workshop: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=80',
+  workshop: '/fotos/sobre/oficina-pedra.jpg',
   project: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80',
 };
 
@@ -228,7 +228,7 @@ export default function SobreClient() {
             Conte com a Bela Art para transformar seu projeto em realidade. Solicite um orçamento gratuito.
           </p>
           <Link
-            href="/orcamento"
+            href="https://wa.me/554498078099?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento."
             className="inline-flex items-center gap-2 px-8 py-4 text-base font-bold text-white btn-red rounded-xl"
           >
             <FaWhatsapp size={20} />

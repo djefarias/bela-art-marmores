@@ -390,7 +390,7 @@ export default function PostClient() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
-              href="/orcamento"
+              href="https://wa.me/554498078099?text=Ol%C3%A1!%20Li%20um%20artigo%20no%20blog%20e%20gostaria%20de%20um%20or%C3%A7amento."
               className="inline-flex items-center gap-2 px-8 py-4 text-base font-bold text-white btn-red rounded-xl"
             >
               <FaWhatsapp size={20} />

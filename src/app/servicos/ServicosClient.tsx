@@ -223,7 +223,7 @@ export default function ServicosClient() {
             Temos soluções personalizadas para cada projeto. Fale conosco e descubra o que podemos fazer por você.
           </p>
           <Link
-            href="/orcamento"
+            href="https://wa.me/554498078099?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20personalizado."
             className="inline-flex items-center gap-2 px-8 py-4 text-base font-bold text-white btn-red rounded-xl"
           >
             <FaWhatsapp size={20} />

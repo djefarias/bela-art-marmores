@@ -248,7 +248,7 @@ export default function GaleriaPage() {
             Transformamos sua ideia em realidade. Orçamento gratuito sem compromisso.
           </p>
           <a
-            href="https://wa.me/5544999999999?text=Olá! Vi o portfólio de vocês e gostaria de um orçamento."
+            href="https://wa.me/554498078099?text=Ol%C3%A1!%20Vi%20o%20portf%C3%B3lio%20de%20voc%C3%AAs%20e%20gostaria%20de%20um%20or%C3%A7amento."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 text-base font-bold text-white btn-red rounded-xl shadow-lg"

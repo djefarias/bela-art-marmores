@@ -198,7 +198,7 @@ export default function ProjetosClient() {
             Solicite um orçamento gratuito e transforme seu espaço com pedras naturais de alta qualidade.
           </p>
           <Link
-            href="/orcamento"
+            href="https://wa.me/554498078099?text=Ol%C3%A1!%20Vi%20um%20projeto%20no%20site%20e%20gostaria%20de%20um%20or%C3%A7amento."
             className="inline-flex items-center gap-2 px-8 py-4 text-base font-bold text-white btn-red rounded-xl"
           >
             <FaWhatsapp size={20} />

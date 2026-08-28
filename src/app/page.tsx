@@ -171,7 +171,7 @@ export default function Home() {
 
             <div className="flex flex-wrap gap-4 animate-fade-up" style={{ animationDelay: '0.4s' }}>
               <Link
-                href="/orcamento"
+                href="https://wa.me/554498078099?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20meu%20projeto."
                 className="inline-flex items-center gap-2 px-8 py-4 text-base font-bold text-white btn-red rounded-xl shadow-lg"
               >
                 <FaWhatsapp size={20} />
