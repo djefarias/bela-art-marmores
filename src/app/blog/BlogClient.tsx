@@ -14,7 +14,7 @@ const IMG = {
   gourmet: 'https://images.unsplash.com/photo-1577140917170-285929fb55b7?w=800&q=80',
   project: 'https://images.unsplash.com/photo-1615529328331-f8917597711f?w=800&q=80',
   living: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80',
-  hero: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1920&q=80',
+  hero: '/blog/tendencias-marmores-2026.jpg',
 };
 
 // Static blog posts for now
